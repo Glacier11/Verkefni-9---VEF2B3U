@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>Spurning 1 <br>
+Press something
+<div id="text">Text = </div><br><br>
+
+<script>
+	var text = document.getElementById("text")
+
+	function keyPress(event) {
+		text.innerHTML += String.fromCharCode(event.keyCode)
+	}
+	document.addEventListener("keypress", keyPress); // þegar eitthver stafur eða tala er ýtt á
+</script>
+
+</div>
+
+
+<div id="quiz">
+	<h4></h4>
+	<div id="buttons"></div> <br>
+	<h4></h4> <br>
+</div>
+
+
+<script type="text/javascript" src="quiz.js"></script>
+
+
+</body>
+</html>
